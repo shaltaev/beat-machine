@@ -4,7 +4,7 @@
   "author": "shaltaev <gleb.shaltaev@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack-cli serve",
+    "dev": "webpack serve",
     "build": "webpack",
     "lint": "eslint ./src/**/*.{ts,tsx} --ext .ts,.tsx",
     "check-types": "tsc --noemit",
