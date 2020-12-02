@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-cli serve",
+    "build": "webpack",
     "lint": "eslint ./src/**/*.{ts,tsx} --ext .ts,.tsx",
     "check-types": "tsc --noemit",
     "test": "jest"
