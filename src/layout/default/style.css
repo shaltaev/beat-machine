@@ -1,0 +1,7 @@
+.default-layout {
+  @apply w-full h-screen;
+}
+
+.content {
+  @apply p-4;
+}

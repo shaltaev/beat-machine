@@ -1,0 +1,7 @@
+.default-layout-header {
+  @apply p-4 flex-auto;
+}
+
+.anchor {
+  @apply p-2 mr-2 inline-block border-0 rounded-xl bg-blue-400 text-white;
+}

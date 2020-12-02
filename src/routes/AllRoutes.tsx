@@ -1,13 +1,29 @@
 import React, { FC } from 'react'
-import { RouteProps } from 'react-router-dom'
 
-import { PageBeatMachine } from '../pages/BeatMachine'
+import { PageAbout, PageCreateBeat } from '@src/pages'
+import { DefaultLayout } from '@src/layout'
+import { RoutesEnum } from '@src/routes/routes_enum'
+import { IRouteParam } from '@src/routes/interfaces'
 import { ListOfRoutes } from '@src/routes/ListOfRoutes'
 
-const routes: RouteProps[] = [
+const routes: IRouteParam[] = [
   {
-    path: '/',
-    children: PageBeatMachine,
+    props: {
+      path: RoutesEnum.About,
+      children: PageAbout,
+    },
+    addition: {
+      layout: DefaultLayout,
+    },
+  },
+  {
+    props: {
+      path: RoutesEnum.CreateBeat,
+      children: PageCreateBeat,
+    },
+    addition: {
+      layout: DefaultLayout,
+    },
   },
 ]
 
