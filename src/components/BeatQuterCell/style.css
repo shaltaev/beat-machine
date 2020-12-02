@@ -1,3 +1,7 @@
 .beat-quarter-cell {
-  @apply h-8 w-8 block bg-blue-200;
+  @apply h-8 w-8 block border-2 border-blue-200;
+}
+
+.beat-quarter-cell--active {
+  @apply bg-blue-200;
 }
