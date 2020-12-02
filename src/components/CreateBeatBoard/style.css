@@ -1,4 +1,3 @@
 .create-beat-board {
-  @apply p-4 rounded-2xl;
-  background-color: lightslategrey;
+  @apply grid grid-cols-9 gap-1;
 }
