@@ -16,6 +16,7 @@ module.exports = {
   rules: {
     'react/prop-types': 'off',
     'dot-notation': 'off',
+    '@typescript-eslint/space-before-function-paren': 'off',
     '@typescript-eslint/dot-notation': ['error'],
     '@typescript-eslint/naming-convention': [
       'error',
