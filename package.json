@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "author": "shaltaev <gleb.shaltaev@gmail.com>",
   "license": "MIT",
+  "homepage": "https://shaltaev.github.com/beat-machine",
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack",
+    "deploy": "gh-pages -d build",
     "lint": "eslint ./src/**/*.{ts,tsx} --ext .ts,.tsx",
     "check-types": "tsc --noemit",
     "test": "jest"
@@ -55,6 +57,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-standard": "^5.0.0",
+    "gh-pages": "^3.1.0",
     "history": "^5.0.0",
     "html-webpack-plugin": "^4.5.0",
     "husky": "^4.3.0",

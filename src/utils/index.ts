@@ -1,1 +1,1 @@
-export { makeEvent } from './make_domain_event'
+export { makeDomainEvent } from './make_domain_event'

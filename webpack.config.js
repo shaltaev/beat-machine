@@ -4,7 +4,7 @@ const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
-  mode: 'development',
+  mode: 'production',
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
