@@ -1,5 +1,8 @@
 .beat-quarter-cell {
   @apply h-8 w-8 block border-2 border-blue-200;
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
 }
 
 .beat-quarter-cell--active {
