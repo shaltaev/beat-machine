@@ -1,0 +1,3 @@
+.sixteenth-notes {
+  @apply grid grid-cols-4 col-start-3 col-span-8 items-center gap-1;
+}

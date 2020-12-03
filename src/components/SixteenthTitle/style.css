@@ -1,0 +1,3 @@
+.label {
+  @apply overflow-ellipsis p-2 pr-4 text-gray-900 text-right text-xs col-span-2 col-start-1;
+}

@@ -1,0 +1,84 @@
+.create-beat-board {
+  @apply flex flex-col;
+}
+
+.controls {
+  @apply w-full grid grid-cols-12 justify-end gap-4 mb-6;
+}
+
+.progress-box {
+  @apply w-full grid grid-cols-11 pb-1.5;
+}
+
+.progress {
+  @apply col-span-8 col-start-3 w-full;
+}
+
+.progress[value]::-webkit-progress-value {
+  background-image:
+    -webkit-linear-gradient(-45deg,
+    transparent 33%, rgba(0, 0, 0, .1) 33%,
+    rgba(0,0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top,
+    rgba(255, 255, 255, .25),
+    rgba(221, 221, 221, 0.25)),
+    -webkit-linear-gradient(left, #09c, #f44);
+
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.play {
+  @apply p-2 bg-green-300 col-span-2 rounded-xl col-start-8;
+}
+
+.stop {
+  @apply p-2 bg-red-300 col-span-2 rounded-xl col-start-10;
+}
+
+.input-box {
+  @apply col-span-2 items-center;
+}
+
+.input-label {
+  @apply pr-4;
+}
+
+.input-field {
+  @apply bg-gray-50 rounded-b;
+}
+
+.input-bpm {
+  @apply col-start-6;
+}
+
+.board {
+  @apply grid grid-cols-11 gap-1 mb-6;
+}
+
+.add-box {
+  @apply p-3 grid grid-cols-1 gap-0.5 w-1/3 border-2 border-blue-200 rounded-2xl;
+}
+
+.add-box-span {
+  @apply text-xl text-center pb-1.5;
+}
+
+.add-box-label {
+  @apply pr-2 w-1/3 inline-block text-right;
+}
+
+.add-box-select {
+  @apply w-2/3 p-2 border border-blue-200 rounded;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+}
+
+.add-box-select:after {
+  @apply absolute;
+}
+
+.add-box__add-btn {
+  @apply text-white bg-blue-400 p-2 mt-2 rounded-md;
+}

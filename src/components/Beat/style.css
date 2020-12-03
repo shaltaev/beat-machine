@@ -1,0 +1,3 @@
+.beat {
+  @apply grid grid-cols-4 gap-1 justify-around;
+}
