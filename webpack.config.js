@@ -1,9 +1,10 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
-  mode: 'development',
+  mode: 'production',
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
     historyApiFallback: true,
@@ -59,6 +60,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.template.html')
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, 'src', 'assets'), to: "assets" },
+      ],
+      options: {
+        concurrency: 100,
+      },
     })
   ]
 }

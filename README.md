@@ -28,6 +28,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## Samples in project
+
+Samples was gotten from [https://soundpacks.com/free-sound-packs/drumbrute-kit/](https://soundpacks.com/free-sound-packs/drumbrute-kit/)
+
 ## License
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
