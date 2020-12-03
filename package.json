@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack serve",
     "build": "webpack",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint ./src/**/*.{ts,tsx} --ext .ts,.tsx",
     "check-types": "tsc --noemit",
     "test": "jest"
